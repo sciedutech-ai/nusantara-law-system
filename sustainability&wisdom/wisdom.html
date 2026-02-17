@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Wisdom Library | NLS™</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* CSS Library */
+        .library-header {
+            padding: 150px 5% 50px 5%;
+            text-align: center;
+            background: linear-gradient(to bottom, #050510, #1a1a2e);
+        }
+
+        .library-header h1 { font-family: 'Playfair Display'; font-size: 3rem; margin-bottom: 20px; }
+        .library-header p { color: rgba(255,255,255,0.7); max-width: 600px; margin: 0 auto; }
+
+        .search-bar {
+            margin-top: 40px;
+            position: relative;
+            max-width: 500px;
+            margin-left: auto; margin-right: auto;
+        }
+
+        .search-bar input {
+            width: 100%; padding: 15px 50px 15px 20px;
+            border-radius: 50px; border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.05); color: white; outline: none;
+            font-size: 1rem;
+        }
+        .search-bar i { position: absolute; right: 20px; top: 18px; color: #fddb92; }
+
+        /* Grid Layout */
+        .archive-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 50px 10%;
+            background: #1a1a2e;
+        }
+
+        .archive-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .archive-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.08);
+            border-color: #fddb92;
+        }
+
+        .card-icon {
+            font-size: 2rem; color: #fddb92; margin-bottom: 20px;
+        }
+
+        .archive-card h3 { font-family: 'Playfair Display'; margin-bottom: 10px; font-size: 1.2rem; }
+        .archive-card p { font-size: 0.85rem; color: rgba(255,255,255,0.6); line-height: 1.6; }
+        
+        .ai-badge {
+            position: absolute; top: 15px; right: 15px;
+            background: rgba(108, 92, 231, 0.2); color: #a29bfe;
+            font-size: 0.6rem; padding: 5px 10px; border-radius: 20px;
+            text-transform: uppercase; border: 1px solid rgba(108, 92, 231, 0.3);
+        }
+
+    </style>
+</head>
+<body>
+
+        <nav class="navbar">
+        <div class="logo">NLS™</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="/personal-alignment/personal-alignment.html">Personal Alignment</a></li>
+            <li><a href="/leadership/leadership.html">Leadership</a></li>
+            <li><a href="/sustainability&wisdom/sustainability.html">Sustainability Tracker</a></li>
+        </ul>
+        <div class="nav-actions">
+            <span class="lang-switch"><i class="fas fa-globe"></i> ID</span>
+            <a href="#" class="btn-primary">Akses Sistem</a>
+        </div>
+    </nav>
+
+    <header class="library-header">
+        <h1>Cultural <span style="color:#fddb92; font-style:italic;">Wisdom</span> Library</h1>
+        <p>Repositori digital untuk menjaga nilai luhur dan pengalaman kolektif. Basis pengetahuan untuk "Cultural Intelligence" Siduu AI.</p>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Cari pola keputusan, etika, atau sejarah..." id="searchInput">
+            <i class="fas fa-search"></i>
+        </div>
+    </header>
+
+    <section class="archive-grid" id="gridContainer">
+        
+        <div class="archive-card" data-category="ethics">
+            <span class="ai-badge">Siduu Knowledge Base</span>
+            <div class="card-icon"><i class="fas fa-gavel"></i></div>
+            <h3>Leadership Ethics Vault</h3>
+            <p>Kumpulan studi kasus dan panduan etika kepemimpinan yang berakar pada kearifan lokal Nusantara.</p>
+        </div>
+
+        <div class="archive-card" data-category="history">
+            <span class="ai-badge">Siduu Knowledge Base</span>
+            <div class="card-icon"><i class="fas fa-history"></i></div>
+            <h3>Collective Experience Map</h3>
+            <p>Dokumentasi sejarah organisasi dan pengalaman kolektif sebagai kompas pengambilan keputusan masa depan.</p>
+        </div>
+
+        <div class="archive-card" data-category="patterns">
+            <span class="ai-badge">AI Pattern Match</span>
+            <div class="card-icon"><i class="fas fa-chess-board"></i></div>
+            <h3>Decision-Making Patterns</h3>
+            <p>Pola-pola keputusan masa lalu yang terbukti efektif menjaga harmoni dan stabilitas komunitas.</p>
+        </div>
+
+        <div class="archive-card" data-category="community">
+            <span class="ai-badge">Social Data</span>
+            <div class="card-icon"><i class="fas fa-users"></i></div>
+            <h3>Community Wisdom Records</h3>
+            <p>Ruang penyimpanan ekspresi lokal, cerita rakyat, dan tanggung jawab kolektif khas sistem Anda.</p>
+        </div>
+
+    </section>
+
+    <script>
+        // Simple Search Filter
+        const input = document.getElementById('searchInput');
+        const cards = document.querySelectorAll('.archive-card');
+
+        input.addEventListener('keyup', function(e) {
+            const term = e.target.value.toLowerCase();
+            
+            cards.forEach(card => {
+                const title = card.querySelector('h3').innerText.toLowerCase();
+                const desc = card.querySelector('p').innerText.toLowerCase();
+                
+                if(title.includes(term) || desc.includes(term)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
