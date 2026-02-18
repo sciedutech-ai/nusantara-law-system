@@ -1,0 +1,163 @@
+/* =========================================
+   STYLE KHUSUS: METHOD (Detailed & Process)
+   ========================================= */
+
+/* --- 1. BASE STYLES --- */
+:root {
+    --bg: #050508;
+    --card-bg: #0a0a0e;
+    --gold: #c5a47e;
+    --gold-dim: rgba(197, 164, 126, 0.3);
+    --white: #ffffff;
+    --text-dim: rgba(255, 255, 255, 0.6);
+    --font-serif: 'Cormorant Garamond', serif;
+    --font-sans: 'Inter', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background-color: var(--bg); color: var(--white); font-family: var(--font-sans); font-weight: 200; line-height: 1.6; overflow-x: hidden; }
+a { text-decoration: none; color: inherit; cursor: none; }
+button { cursor: none; }
+
+/* Navbar */
+.navbar { position: fixed; top: 0; width: 100%; padding: 30px 5%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; background: linear-gradient(to bottom, rgba(5,5,8,0.9), transparent); backdrop-filter: blur(5px); }
+.logo { font-family: var(--font-serif); font-size: 1.5rem; letter-spacing: 5px; color: var(--gold); }
+.nav-links { display: flex; gap: 40px; list-style: none; }
+.nav-links a { color: var(--text-dim); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; transition: 0.4s; }
+.nav-links a:hover, .nav-links a.active { color: var(--white); text-shadow: 0 0 10px var(--gold-dim); }
+.highlight-btn { border: 1px solid var(--gold); padding: 8px 20px; border-radius: 50px; transition: 0.4s; }
+.highlight-btn:hover { background: var(--gold); color: var(--bg) !important; box-shadow: 0 0 15px var(--gold); }
+
+/* Hero */
+.video-container { position: fixed; inset: 0; z-index: -2; background-color: var(--bg); }
+#bg-video { width: 100%; height: 100%; object-fit: cover; opacity: 0.15; }
+.vignette-strong { position: absolute; inset: 0; background: radial-gradient(circle, transparent 10%, rgba(5, 5, 8, 0.95) 70%, #050508 100%); z-index: -1; }
+
+.hero { height: 100vh; display: flex; justify-content: center; align-items: center; text-align: center; padding: 100px; }
+.title-top { font-family: var(--font-serif); font-style: italic; font-size: 1.2rem; color: var(--gold); margin-bottom: px; }
+.main-title { font-family: var(--font-serif); font-size: 4rem; font-weight: 300; letter-spacing: 10px; margin-bottom: 20px; text-transform: uppercase; color: #fff; }
+.tagline { max-width: 700px; margin: 0 auto; font-size: 1rem; color: var(--text-dim); letter-spacing: 1px; }
+
+/* --- 2. DETAILED METHODS LIST (New Layout) --- */
+.method-detail-section { padding: 80px 10%; position: relative; }
+.section-bg-ornament { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 1px; height: 100%; background: linear-gradient(to bottom, transparent, var(--gold-dim), transparent); z-index: 0; }
+
+.section-header-center { text-align: center; margin-bottom: 80px; position: relative; z-index: 2; }
+.serif-title { font-family: var(--font-serif); font-size: 2.5rem; color: var(--gold); margin-bottom: 15px; }
+.body-text-sm { font-size: 0.95rem; color: var(--text-dim); max-width: 600px; margin: 0 auto; }
+
+.methods-list-container { max-width: 900px; margin: 0 auto; position: relative; z-index: 2; }
+
+.method-row { 
+    display: flex; gap: 40px; padding: 40px 0; border-bottom: 1px solid rgba(197, 164, 126, 0.1); 
+    transition: 0.5s; align-items: flex-start;
+}
+.method-row:last-child { border-bottom: none; }
+.method-row:hover { transform: translateX(10px); }
+
+.method-num { 
+    font-family: var(--font-serif); font-size: 2.5rem; color: var(--gold); opacity: 0.3; 
+    min-width: 60px; font-style: italic; 
+}
+.method-content h4 { 
+    font-family: var(--font-serif); font-size: 1.8rem; color: var(--white); margin-bottom: 15px; 
+    letter-spacing: 1px;
+}
+.method-desc { font-size: 1rem; color: var(--text-dim); line-height: 1.8; text-align: justify; }
+.method-desc strong { color: var(--gold); font-weight: 400; }
+.method-desc em { font-style: italic; color: #fff; }
+
+/* Highlight Row (Method 3) */
+.highlight-row { 
+    background: linear-gradient(90deg, transparent, rgba(197, 164, 126, 0.05), transparent); 
+    border-top: 1px solid var(--gold-dim); border-bottom: 1px solid var(--gold-dim);
+    padding: 60px 20px; margin: 20px -20px;
+}
+.highlight-row .method-num { color: var(--gold); opacity: 1; text-shadow: 0 0 10px var(--gold); }
+
+/* --- 3. PROCESS TIMELINE (CLIENT JOURNEY) --- */
+.process-section { padding: 100px 10%; background: #08080c; }
+.process-timeline { 
+    display: flex; flex-direction: column; gap: 0; 
+    max-width: 700px; margin: 0 auto; position: relative; 
+    border-left: 1px solid var(--gold-dim); padding-left: 40px;
+}
+
+.process-step { position: relative; padding-bottom: 60px; }
+.process-step:last-child { padding-bottom: 0; }
+
+.step-icon { 
+    position: absolute; left: -60px; top: 0; 
+    width: 40px; height: 40px; background: var(--bg); border: 1px solid var(--gold); border-radius: 50%;
+    display: flex; justify-content: center; align-items: center; 
+    font-family: var(--font-serif); color: var(--gold); font-size: 0.9rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); z-index: 2;
+}
+
+.step-content h5 { 
+    font-family: var(--font-serif); font-size: 1.5rem; color: var(--white); margin-bottom: 10px; 
+    text-transform: uppercase; letter-spacing: 2px;
+}
+.step-content p { font-size: 0.9rem; color: var(--text-dim); line-height: 1.7; }
+.step-content em { color: var(--gold); font-style: normal; }
+
+/* --- 4. SERVICE LEVELS (GRID) --- */
+.service-levels-section { padding: 100px 5%; background: linear-gradient(to bottom, #08080c, #050508); }
+.levels-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 60px; }
+
+.level-card { 
+    background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.1); 
+    padding: 40px 20px; text-align: center; transition: 0.4s; position: relative; overflow: hidden;
+    display: flex; flex-direction: column; justify-content: space-between; min-height: 400px;
+}
+.level-card:hover { transform: translateY(-10px); border-color: var(--gold-dim); background: rgba(255, 255, 255, 0.04); }
+
+.level-tag { 
+    display: inline-block; font-size: 0.6rem; text-transform: uppercase; letter-spacing: 3px; 
+    color: var(--text-dim); border: 1px solid rgba(255,255,255,0.1); padding: 5px 10px; border-radius: 20px; margin-bottom: 20px;
+}
+
+.level-card h4 { font-family: var(--font-serif); font-size: 1.5rem; color: var(--white); margin-bottom: 15px; line-height: 1.2; }
+.level-desc { font-size: 0.85rem; color: var(--text-dim); margin-bottom: 30px; line-height: 1.6; flex-grow: 1; }
+.level-price { font-family: var(--font-serif); font-size: 1.2rem; color: var(--gold); margin-bottom: 25px; font-style: italic; }
+
+.level-link { 
+    display: block; width: 100%; padding: 12px; border: 1px solid var(--text-dim); 
+    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; transition: 0.3s;
+}
+.level-link:hover { border-color: var(--gold); color: var(--gold); }
+
+/* Featured Card (Level 3) */
+.level-card.featured { border-color: var(--gold); transform: scale(1.05); z-index: 2; background: rgba(10, 10, 14, 0.8); }
+.level-card.featured .level-tag { background: var(--gold); color: #000; border: none; font-weight: bold; }
+.level-link.highlight { background: var(--gold); color: #000; border: none; }
+.level-link.highlight:hover { background: #fff; }
+.card-glow-effect { position: absolute; inset: 0; background: radial-gradient(circle at 50% 0%, rgba(197, 164, 126, 0.2), transparent 70%); pointer-events: none; }
+
+/* CTA & Footer */
+.cta-origin { height: 40vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+.cta-sub { font-family: var(--font-serif); font-style: italic; font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-dim); }
+.cta-link { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 5px; color: var(--white); border-bottom: 1px solid var(--gold); padding-bottom: 10px; transition: 0.5s; }
+.cta-link:hover { letter-spacing: 8px; color: var(--gold); }
+
+.footer-clean { padding: 50px 5%; border-top: 1px solid rgba(255,255,255,0.05); font-size: 0.7rem; color: var(--text-dim); text-align: center; }
+
+/* Utils */
+.audio-unit { position: fixed; bottom: 40px; right: 40px; z-index: 999; }
+#playBtn { width: 45px; height: 45px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.2); display: flex; justify-content: center; align-items: center; }
+.pulse { width: 6px; height: 6px; background: var(--gold); border-radius: 50%; }
+.cursor-dot, .cursor-outline { pointer-events: none; position: fixed; top: 0; left: 0; transform: translate(-50%, -50%); border-radius: 50%; z-index: 99999; }
+.cursor-dot { width: 6px; height: 6px; background: var(--white); }
+.cursor-outline { width: 40px; height: 40px; border: 1px solid var(--gold); transition: transform 0.1s; }
+.reveal { opacity: 0; transform: translateY(30px); transition: all 1.2s cubic-bezier(0.2, 0.6, 0.2, 1); }
+.reveal.active { opacity: 1; transform: translateY(0); }
+
+/* Responsive */
+@media (max-width: 1024px) { .levels-grid { grid-template-columns: repeat(2, 1fr); } .level-card.featured { transform: scale(1); } }
+@media (max-width: 768px) { 
+    .nav-links { display: none; } .nav-trigger { display: block; }
+    .levels-grid { grid-template-columns: 1fr; }
+    .method-row { flex-direction: column; gap: 10px; }
+    .method-num { font-size: 1.5rem; margin-bottom: 0; }
+    .highlight-row { margin: 20px 0; border-left: 2px solid var(--gold); border-top: none; border-bottom: none; }
+}

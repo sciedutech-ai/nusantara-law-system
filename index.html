@@ -3,512 +3,429 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nusantara Law System™</title>
-    
-    <link rel="stylesheet" href="style.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Origin | NLS™ Nusantara</title>
+    <link rel="stylesheet" href="style-origin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="video-background">
-        <video autoplay muted loop playsinline id="bg-video">
-            <source src="/assets/video/281154.mp4" type="video/mp4">
-            Browser Anda tidak mendukung video HTML5.
-        </video>
-        
-        <div class="video-overlay"></div>
+    <div id="enter-portal" class="portal-overlay">
+        <div class="portal-content">
+            <h1 class="fade-in">NLS</h1>
+            <button id="enter-btn" class="btn-enter">Begin Journey</button>
+        </div>
     </div>
 
-<nav class="navbar">
-        <div class="logo">NLS™</div>
-        
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
+    <div class="video-container">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="assets/video/281154.mp4" type="video/mp4">
+        </video>
+        <div class="vignette-strong"></div>
+    </div>
 
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">NLS™</a></div>
+        <div class="nav-trigger" id="mobile-menu"><span></span><span></span></div>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="/personal-alignment/personal-alignment.html">Personal Alignment</a></li>
-            <li><a href="/leadership/leadership.html">Leadership</a></li>
-            <li><a href="/sustainability/sustainability.html">Sustainability</a></li>
-            <li><a href="/wisdom/wisdom.html">Wisdom Library</a></li>
+            <li><a href="index.html" class="active">Origin</a></li>
+            <li><a href="method.html">The Method</a></li>
+            <li><a href="form.html" class="highlight-btn">Mulai Cari Jati Diri</a></li>
         </ul>
-        <div class="nav-actions">
-            <span class="lang-switch"><i class="fas fa-globe"></i> ID</span>
-            <a href="#" class="btn-primary">Akses Sistem</a>
-        </div>
     </nav>
 
     <header class="hero">
-        
-        <div class="hero-content">
-            
-            <div class="hero-left">
-                <div class="timeline-item">
-                    <div class="dot"></div>
-                    <div class="text">
-                        <h4>Root Calibration</h4>
-                        <p>Kalibrasi akar dan nilai budaya.</p>
-                    </div>
-                </div>
-                <div class="timeline-item active">
-                    <div class="dot"></div>
-                    <div class="text">
-                        <h4>Structural Integrity</h4>
-                        <p>Membangun arsitektur yang stabil.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="dot"></div>
-                    <div class="text">
-                        <h4>Alignment Check</h4>
-                        <p>Penyelarasan tujuan jangka panjang.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hero-right">
-                <div class="glass-card">
-                    <h5>Sustainability Tracker</h5>
-                    <div class="chart-mockup">
-                        <svg viewBox="0 0 100 40">
-                            <path d="M0 30 Q 20 10, 40 25 T 100 15" stroke="white" fill="none" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <p class="small-text">Sistem berjalan dalam koridor keberlanjutan.</p>
-                </div>
-                
-                <div class="glass-card small">
-                    <h5>Daily Cosmic Alerts</h5>
-                    <div class="slider-mockup"></div>
-                </div>
-            </div>
+        <div class="hero-content reveal">
+            <h2 class="title-top">Reclaiming Ancient Wisdom</h2>
+            <h1 class="main-title">NUSANTARA<br>LAW SYSTEM</h1>
+            <p class="tagline">A sophisticated framework for the modern architect of life.</p>
         </div>
-
-        <div class="hero-footer">
-            <h1 class="main-title">
-                Menyelaraskan <span class="italic">Hukum Alam</span> <br>
-                dengan Identitas Budaya
-            </h1>
-            <div class="cta-wrapper">
-                <p>Celestial insights from <strong>NLS Architecture</strong></p>
-                <button class="btn-white">Download Blueprint <i class="fas fa-arrow-right"></i></button>
-            </div>
-        </div>
-
     </header>
 
-    <section class="services-section">
-        <div class="container">
-            
-            <div class="service-card">
-                <div class="orb-container">
-                    <div class="orb orb-nature"></div>
-                    <div class="orb-glow nature-glow"></div>
-                </div>
-                <h3>Nature-Based<br>Human Design</h3>
-                <p>Konsultasi struktur hidup dan kerja yang selaras dengan ritme alami tubuh untuk mencegah burnout dan menjaga vitalitas.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="orb-container">
-                    <div class="orb orb-strategy"></div>
-                    <div class="orb-glow strategy-glow"></div>
-                </div>
-                <h3>Strategic Decision<br>Framework</h3>
-                <p>Pendampingan pengambilan keputusan strategis berbasis etika kepemimpinan dan hukum budaya untuk stabilitas jangka panjang.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="orb-container">
-                    <div class="orb orb-blueprint"></div>
-                    <div class="orb-glow blueprint-glow"></div>
-                </div>
-                <h3>Civilization<br>Blueprint Tools</h3>
-                <p>Template arsitektur institusi yang memiliki karakter kuat, dirancang untuk bertahan melintasi generasi.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="orb-container">
-                    <div class="orb orb-wisdom"></div>
-                    <div class="orb-glow wisdom-glow"></div>
-                </div>
-                <h3>Cultural Wisdom<br>Library</h3>
-                <p>Akses ke repositori digital nilai-nilai luhur dan pengalaman kolektif sebagai fondasi identitas sistem Anda.</p>
-            </div>
-
+    <section class="section-text-center reveal">
+        <div class="content-wrapper">
+            <blockquote class="quote-block mystical-quote">
+                "The greatest tragedies of our time are not found in lack of effort, but in the exhaustion of the soul trying to be something it was never designed to be."
+            </blockquote>
+            <p class="body-text mt-30">
+                NLS™ adalah jembatan kembali ke frekuensi aslimu. Di sini, strategi bukanlah beban, melainkan perpanjangan alami dari lanskap internalmu. Kami mengintegrasikan mekanika presisi <strong>Human Design</strong> dengan <strong>Hukum Alam</strong> yang tak terbantahkan.
+            </p>
         </div>
     </section>
 
-    <section class="features-split">
-        <div class="container split-layout">
-            
-            <div class="feature-menu">
-                <h2 class="section-title">
-                    Discover Your <span class="gold-text">System Identity</span>
-                </h2>
-                
-                <div class="menu-list">
-                    <div class="menu-item active" data-target="align-content">
-                        <span class="menu-text">Personal Alignment</span>
-                        <i class="fas fa-chevron-right arrow"></i>
-                    </div>
-                    <div class="menu-item" data-target="leader-content">
-                        <span class="menu-text">Leadership Architecture</span>
-                        <i class="fas fa-chevron-right arrow"></i>
-                    </div>
-                    <div class="menu-item" data-target="sustain-content">
-                        <span class="menu-text">Sustainability Tracker</span>
-                        <i class="fas fa-chevron-right arrow"></i>
-                    </div>
-                    <div class="menu-item" data-target="wisdom-content">
-                        <span class="menu-text">Cultural Wisdom Library</span>
-                        <i class="fas fa-chevron-right arrow"></i>
-                    </div>
+    <section class="foundation-split reveal">
+        <div class="foundation-col left-col">
+            <div class="col-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg></div>
+            <h3 class="serif-title">Natural Law</h3>
+            <p class="italic-sub">The Universal Rhythm</p>
+            <p class="body-text-sm">
+                Hukum universal yang beroperasi melalui ritme, sebab-akibat, dan keseimbangan. Ia mengatur energi manusia, siklus pertumbuhan, dan stabilitas biologis.
+            </p>
+            <p class="warning-text">Jika dilanggar: Burnout, konflik, dan keruntuhan struktural.</p>
+        </div>
+
+        <div class="vertical-divider"></div>
+
+        <div class="foundation-col right-col">
+            <div class="col-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M3 21h18"/><path d="M5 21V7l8-4 8 4v14"/><path d="M9 10a2 2 0 1 1-4 0v11"/><path d="M19 10a2 2 0 1 1-4 0v11"/></svg></div>
+            <h3 class="serif-title">Cultural Law</h3>
+            <p class="italic-sub">The Ancestral Identity</p>
+            <p class="body-text-sm">
+                Ekspresi kearifan lokal Nusantara yang dibentuk oleh sejarah. Ia membentuk etika kepemimpinan, struktur komunitas, dan tanggung jawab kolektif.
+            </p>
+            <p class="warning-text">Tanpa ini: Modernitas kehilangan identitasnya.</p>
+        </div>
+    </section>
+
+    <section class="mystical-section reveal">
+        <div class="cosmic-compass-container">
+            <div class="compass-ring ring-outer"></div>
+            <div class="compass-ring ring-middle"></div>
+            <div class="compass-ring ring-inner"><div class="compass-core-glow"></div></div>
+            <div class="compass-center-icon">
+                <svg viewBox="0 0 100 100" fill="none" stroke="#c5a47e"><path d="M50 10 L85 90 H15 L50 10 Z" stroke-width="2"/><circle cx="50" cy="55" r="15" stroke-width="1"/></svg>
+            </div>
+        </div>
+        <div class="section-text-center" style="padding-bottom: 60px; display: flex; flex-direction: column; align-items: center;">
+            <h3 class="serif-title">The 5 Roots of Sovereignty</h3>
+            <p class="body-text-sm" style="margin-top: 15px; max-width: 600px; color: var(--gold); letter-spacing: 1px; font-style: italic;">
+                We do not build on sand; we root ourselves in five pillars.
+            </p>
+        </div>
+    </section>
+
+    <section class="alignment-cards-section reveal">
+        <div class="section-bg-ornament"></div>
+        
+        <div class="cards-grid-5">
+            <div class="mystic-card">
+                <div class="card-glow-effect"></div>
+                <div class="card-border-ornament"></div>
+                <div class="card-content-wrap">
+                    <div class="card-top-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>
+                    <span class="pillar-num">I</span>
+                    <h4>Ecosystem</h4>
+                    <p class="card-detail">Merancang lingkungan yang memupuk resonansi. Seperti hutan hujan, kesuksesan ditentukan di mana Anda berakar.</p>
+                    <div class="rune-container"><span class="card-rune">ꦧ꧀ꦲꦸꦩꦶ</span></div>
                 </div>
             </div>
 
-            <div class="feature-display">
-                <div class="display-bg-glow"></div> <div class="display-content active" id="align-content">
-                    <div class="app-mockup">
-                        <div class="mockup-header">
-                            <span class="badge">Energy Status</span>
-                            <h4>Rhythm Check</h4>
-                        </div>
-                        <div class="mockup-body">
-                            <p>Kapasitas energi Anda hari ini:</p>
-                            <div class="progress-bar"><div class="fill" style="width: 80%"></div></div>
-                            <div class="mini-card">
-                                <i class="fas fa-leaf"></i>
-                                <span>Optimal untuk strategi, hindari eksekusi berat.</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description-box">
-                        <h3>Asesmen Mandiri</h3>
-                        <p>Pahami ritme dan kapasitas energi tim untuk menghindari burnout struktural.</p>
-                        <button class="btn-link">Lihat Detail <i class="fas fa-arrow-right"></i></button>
-                    </div>
+            <div class="mystic-card" style="transition-delay: 0.1s;">
+                <div class="card-glow-effect"></div>
+                <div class="card-border-ornament"></div>
+                <div class="card-content-wrap">
+                    <div class="card-top-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M2 12h5l3 5 5-10 3 5h4"/></svg></div>
+                    <span class="pillar-num">II</span>
+                    <h4>Rhythm</h4>
+                    <p class="card-detail">Menemukan tempo internal. Tahu kapan harus meletus seperti gunung berapi, dan kapan diam seperti di dalam gua.</p>
+                    <div class="rune-container"><span class="card-rune">ꦮꦶꦭꦺꦠ꧀</span></div>
                 </div>
+            </div>
 
-                <div class="display-content" id="leader-content">
-                    <div class="app-mockup">
-                        <div class="mockup-header">
-                            <span class="badge">Decision Core</span>
-                            <h4>Strategic Map</h4>
-                        </div>
-                        <div class="mockup-body">
-                            <div class="chart-circle"></div>
-                            <div class="mini-card">
-                                <i class="fas fa-chess-king"></i>
-                                <span>Etika Kepemimpinan: Stabil</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description-box">
-                        <h3>Dashboard Arsitektur</h3>
-                        <p>Ruang pengambilan keputusan berbasis tanggung jawab kolektif.</p>
-                        <button class="btn-link">Lihat Detail <i class="fas fa-arrow-right"></i></button>
-                    </div>
+            <div class="mystic-card center-card" style="transition-delay: 0.2s;">
+                <div class="card-glow-effect"></div>
+                <div class="card-border-ornament"></div>
+                <div class="card-content-wrap">
+                    <div class="card-top-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+                    <span class="pillar-num">III</span>
+                    <h4>Energy</h4>
+                    <p class="card-detail">Menguasai mekanika <em>Human Design</em>. Mengubah perjuangan menjadi aliran (flow) yang tak terbendung.</p>
+                    <div class="rune-container"><span class="card-rune">ꦢꦪ ꦥ꧀ꦫꦤᮥ</span></div>
                 </div>
+            </div>
 
-                <div class="display-content" id="sustain-content">
-                    <div class="app-mockup">
-                        <div class="mockup-header">
-                            <span class="badge">Long-term</span>
-                            <h4>Impact Tracker</h4>
-                        </div>
-                        <div class="mockup-body">
-                            <div class="graph-lines">
-                                <span></span><span></span><span></span>
-                            </div>
-                            <div class="mini-card">
-                                <i class="fas fa-infinity"></i>
-                                <span>Proyeksi Generasi: Aman</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description-box">
-                        <h3>Pemantau Keberlanjutan</h3>
-                        <p>Pastikan sistem tetap berjalan dalam koridor antargenerasi.</p>
-                        <button class="btn-link">Lihat Detail <i class="fas fa-arrow-right"></i></button>
-                    </div>
+            <div class="mystic-card" style="transition-delay: 0.3s;">
+                <div class="card-glow-effect"></div>
+                <div class="card-border-ornament"></div>
+                <div class="card-content-wrap">
+                    <div class="card-top-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg></div>
+                    <span class="pillar-num">IV</span>
+                    <h4>Structure</h4>
+                    <p class="card-detail">Arsitektur strategis yang menopang beratnya ambisi tanpa meruntuhkan kesehatan jiwa founder.</p>
+                    <div class="rune-container"><span class="card-rune">ꦠꦠꦤꦤ꧀</span></div>
                 </div>
+            </div>
 
-                <div class="display-content" id="wisdom-content">
-                    <div class="app-mockup">
-                        <div class="mockup-header">
-                            <span class="badge">Repository</span>
-                            <h4>Value Archive</h4>
-                        </div>
-                        <div class="mockup-body">
-                            <div class="text-lines"></div>
-                            <div class="mini-card">
-                                <i class="fas fa-book-open"></i>
-                                <span>Identitas Budaya Terjaga</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description-box">
-                        <h3>Perpustakaan Hikmah</h3>
-                        <p>Simpan nilai budaya dan pengalaman kolektif sebagai fondasi.</p>
-                        <button class="btn-link">Lihat Detail <i class="fas fa-arrow-right"></i></button>
-                    </div>
+            <div class="mystic-card" style="transition-delay: 0.4s;">
+                <div class="card-glow-effect"></div>
+                <div class="card-border-ornament"></div>
+                <div class="card-content-wrap">
+                    <div class="card-top-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 2.5a5.5 5.5 0 0 1 0 11H6a5.5 5.5 0 0 1 0-11z"/><path d="M12 10.5a5.5 5.5 0 0 1 0 11H6a5.5 5.5 0 0 1 0-11z"/><path d="M12 2.5h6a5.5 5.5 0 0 1 0 11"/><path d="M12 10.5h6a5.5 5.5 0 0 1 0 11"/></svg></div>
+                    <span class="pillar-num">V</span>
+                    <h4>Legacy</h4>
+                    <p class="card-detail">Memastikan setiap cabang yang tumbuh hari ini menjadi akar bagi generasi yang akan datang.</p>
+                    <div class="rune-container"><span class="card-rune">ꦠꦶꦭꦱ꧀</span></div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <section class="roadmap-section">
-        <div class="roadmap-header">
-            <h2>NLS Development <span class="gold-text">Flowchart</span></h2>
-            <p>Prinsip "Structure before Scale" dalam empat tahapan strategis.</p>
-        </div>
-
-        <div class="roadmap-container">
-            <div class="globe-surface"></div>
-            
-            <svg class="roadmap-line" viewBox="0 0 1000 200" preserveAspectRatio="none">
-                <path d="M0,150 Q250,50 500,150 T1000,150" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2" stroke-dasharray="10,10"/>
-            </svg>
-
-            <div class="milestones-wrapper">
-                
-                <div class="milestone-card card-1">
-                    <div class="pin"></div>
-                    <div class="content">
-                        <span class="step-badge">Tahap 1</span>
-                        <h4>Root Calibration</h4>
-                        <p>Kalibrasi nilai budaya & audit kapasitas tim.</p>
-                    </div>
-                </div>
-
-                <div class="milestone-card card-2">
-                    <div class="pin"></div>
-                    <div class="content">
-                        <span class="step-badge">Tahap 2</span>
-                        <h4>Structural Integrity</h4>
-                        <p>Membangun arsitektur informasi yang stabil.</p>
-                    </div>
-                </div>
-
-                <div class="milestone-card card-3">
-                    <div class="pin"></div>
-                    <div class="content">
-                        <span class="step-badge">Tahap 3</span>
-                        <h4>Alignment Check</h4>
-                        <p>Penyelarasan fitur dengan tujuan jangka panjang.</p>
-                    </div>
-                </div>
-
-                <div class="milestone-card card-4">
-                    <div class="pin"></div>
-                    <div class="content">
-                        <span class="step-badge">Tahap 4</span>
-                        <h4>Sustainable Scaling</h4>
-                        <p>Ekspansi bertahap setelah struktur kokoh.</p>
-                    </div>
-                </div>
-
-            </div>
+    <section class="principles-section reveal">
+        <div class="principles-container">
+            <h3 class="serif-title" style="text-align: center; margin-bottom: 40px;">The Core Principles</h3>
+            <ul class="principles-list">
+                <li>
+                    <span class="num">01</span>
+                    <span class="text">Alignment <span class="dim">before</span> Expansion</span>
+                </li>
+                <li>
+                    <span class="num">02</span>
+                    <span class="text">Structure <span class="dim">before</span> Scale</span>
+                </li>
+                <li>
+                    <span class="num">03</span>
+                    <span class="text">Integrity <span class="dim">before</span> Visibility</span>
+                </li>
+            </ul>
+            <p class="principles-footer">"Because what is sustainable is always built in alignment."</p>
         </div>
     </section>
 
-    <section class="testimonials-section">
-        <div class="testi-header">
-            <p class="subtitle">Trusted by Visionary Leaders</p>
-            <h2>Voices of <span class="gold-text">Systemic Change</span></h2>
+    <section class="lenses-section reveal">
+        <div class="section-text-center" style="padding-bottom: 60px; display: flex; flex-direction: column; align-items: center;">
+            <h3 class="serif-title">The Three Lenses of Self</h3>
+            <p class="body-text-sm" style="margin-top: 15px; max-width: 600px; color: var(--gold); letter-spacing: 1px; font-style: italic;">
+                NLS mengintegrasikan tiga lapisan data untuk membaca kode arsitektur manusia secara utuh.
+            </p>
         </div>
 
-        <div class="testi-container">
-            
-            <div class="testi-card">
-                <div class="user-info">
-                    <img src="https://i.pravatar.cc/150?img=11" alt="User 1" class="avatar">
-                    <div class="user-details">
-                        <h5>Alexander T.</h5>
-                        <span>CEO, GreenArch Systems</span>
-                    </div>
+        <div class="lenses-container">
+            <div class="lens-card">
+                <div class="lens-header">
+                    <div class="lens-icon">⌬</div>
+                    <h4>Human Design</h4>
+                    <span class="lens-sub">The Mechanics (Mekanika)</span>
                 </div>
-                <p class="review-text">
-                    "Fitur 'Leadership Architecture' mengubah cara kami mengambil keputusan. NLS membantu kami menyeimbangkan profit dengan tanggung jawab ekologis jangka panjang."
-                </p>
-                <div class="card-footer">
-                    <div class="stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <i class="fas fa-arrow-right icon-arrow"></i>
-                </div>
-            </div>
-
-            <div class="testi-card">
-                <div class="user-info">
-                    <img src="https://i.pravatar.cc/150?img=5" alt="User 2" class="avatar">
-                    <div class="user-details">
-                        <h5>Sarah W.</h5>
-                        <span>Cultural Researcher</span>
-                    </div>
-                </div>
-                <p class="review-text">
-                    "Cultural Wisdom Library adalah terobosan. Kami akhirnya memiliki repositori digital yang menjaga nilai luhur perusahaan tetap hidup di tengah modernisasi."
-                </p>
-                <div class="card-footer">
-                    <div class="stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <i class="fas fa-arrow-right icon-arrow"></i>
-                </div>
-            </div>
-
-            <div class="testi-card">
-                <div class="user-info">
-                    <img src="https://i.pravatar.cc/150?img=68" alt="User 3" class="avatar">
-                    <div class="user-details">
-                        <h5>Dian Pratama</h5>
-                        <span>Founder, Nusantara Tech</span>
-                    </div>
-                </div>
-                <p class="review-text">
-                    "Saya menghindari burnout tim menggunakan modul 'Personal Alignment'. Kami bekerja sesuai ritme alami, dan produktivitas justru meningkat tajam."
-                </p>
-                <div class="card-footer">
-                    <div class="stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <i class="fas fa-arrow-right icon-arrow"></i>
-                </div>
-            </div>
-
-            <div class="testi-card">
-                <div class="user-info">
-                    <img src="https://i.pravatar.cc/150?img=33" alt="User 4" class="avatar">
-                    <div class="user-details">
-                        <h5>Elena R.</h5>
-                        <span>Director of Strategy</span>
-                    </div>
-                </div>
-                <p class="review-text">
-                    "Sustainability Tracker memberikan data yang jujur tentang dampak kami. Ini bukan sekadar alat, tapi kompas moral bagi organisasi kami."
-                </p>
-                <div class="card-footer">
-                    <div class="stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <i class="fas fa-arrow-right icon-arrow"></i>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="pagination-dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-    </section>
-
-    <footer class="site-footer">
-        <div class="footer-content">
-            
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <h2 class="logo">NLS™</h2>
-                    <p>Nusantara Law System</p>
-                </div>
-                <div class="footer-cta-text">
-                    <h3>Discover Systemic Wisdom</h3>
-                </div>
-            </div>
-
-            <div class="footer-grid">
-                
-                <div class="footer-col">
-                    <h4>Menu</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Tentang NLS</a></li>
-                        <li><a href="#">Layanan</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Akses Sistem</a></li>
+                <div class="lens-body">
+                    <p>Peta sirkuit energi biologis. Menjelaskan <strong>bagaimana</strong> auramu beroperasi.</p>
+                    <ul class="lens-list">
+                        <li><strong>Generator/MG:</strong> The Builders (Sakti Pencipta). Energi sakral yang merespons kehidupan.</li>
+                        <li><strong>Projector:</strong> The Guides (Resi Penunjuk). Membaca dan mengarahkan energi orang lain.</li>
+                        <li><strong>Manifestor:</strong> The Initiators (Raja Pemulai). Membuka jalan dan memberi dampak.</li>
+                        <li><strong>Reflector:</strong> The Observers (Cermin Semesta). Sampel kesehatan lingkungan.</li>
                     </ul>
                 </div>
+            </div>
 
-                <div class="footer-col">
-                    <h4>Contact</h4>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <span>Email</span>
-                            <p>contact@nls.system</p>
-                        </div>
-                        <div class="contact-item">
-                            <span>Address</span>
-                            <p>Nusantara Law System,<br>Jawa Timur, Indonesia</p>
-                        </div>
-                        <div class="contact-item">
-                            <span>Phone</span>
-                            <p>+62 (021) 555-0199</p>
-                        </div>
-                    </div>
+            <div class="lens-card">
+                <div class="lens-header">
+                    <div class="lens-icon">☸</div>
+                    <h4>Nusantara Weton</h4>
+                    <span class="lens-sub">The Time (Kultural)</span>
                 </div>
-
-                <div class="footer-col newsletter-col">
-                    <h4>Subscribe to Newsletter</h4>
-                    <div class="newsletter-form">
-                        <input type="email" placeholder="Enter your email">
-                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
-                    </div>
-                    <p class="small-note">+ Dapatkan update arsitektur & insight mingguan.</p>
-                    
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
+                <div class="lens-body">
+                    <p>Siklus waktu yang membentuk karakter dasar berdasarkan <strong>Hukum Alam Nusantara</strong>.</p>
+                    <ul class="lens-list">
+                        <li><strong>Legi (Timur):</strong> Udara/Kayu. Optimisme, ekspansi, dan pergaulan (Manis).</li>
+                        <li><strong>Pahing (Selatan):</strong> Api. Ambisi, seni, dan transformasi (Pahit).</li>
+                        <li><strong>Pon (Barat):</strong> Logam/Air. Kepemimpinan, ketegasan, dan strategi (Sombong/Kuat).</li>
+                        <li><strong>Wage (Utara):</strong> Tanah/Bumi. Stabilitas, pemikir, dan pengendali (Hitam).</li>
+                        <li><strong>Kliwon (Pusat):</strong> Spiritual/Ether. Keseimbangan dan pusat spiritual (Kasih).</li>
+                    </ul>
                 </div>
+            </div>
 
+            <div class="lens-card">
+                <div class="lens-header">
+                    <div class="lens-icon">☼</div>
+                    <h4>Archetype Zodiac</h4>
+                    <span class="lens-sub">The Season (Psikologi)</span>
+                </div>
+                <div class="lens-body">
+                    <p>Psikologi dasar yang dipengaruhi oleh posisi matahari (musim) saat kelahiran.</p>
+                    <ul class="lens-list">
+                        <li><strong>Fire (Api):</strong> Aries, Leo, Sagitarius. Inspirasi, intuisi, dan semangat murni.</li>
+                        <li><strong>Earth (Tanah):</strong> Taurus, Virgo, Capricorn. Sensasi, materi, dan struktur nyata.</li>
+                        <li><strong>Air (Udara):</strong> Gemini, Libra, Aquarius. Intelektual, komunikasi, dan ide.</li>
+                        <li><strong>Water (Air):</strong> Cancer, Scorpio, Pisces. Emosi, rasa, dan koneksi batin.</li>
+                    </ul>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="footer-bottom">
-            <p>&copy; 2026 NLS. All Rights Reserved.</p>
-            <div class="legal-links">
-                <a href="#">Privacy Policy</a>
-                <span>|</span>
-                <a href="#">User Agreement</a>
+    <section class="matrix-section reveal">
+        <div class="matrix-header" style="padding-bottom: 60px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <h3 class="serif-title">The Correlation Matrix</h3>
+            <p class="body-text-sm" style="margin-top: 15px; max-width: 600px; color: var(--gold); letter-spacing: 1px; font-style: italic;">
+                Bagaimana ketiga lensa ini mempengaruhi realitas kehidupan Anda.
+            </p>
+        </div>
+
+        <div class="matrix-grid">
+            <div class="matrix-item">
+                <h5>Pekerjaan (Vocation)</h5>
+                <p><strong>HD:</strong> Menentukan *cara kerja* (misal: Projector tidak cocok 9-to-5 fisik).<br>
+                <strong>Weton:</strong> Menentukan *arah rezeki* dan hari keberuntungan.<br>
+                <strong>Zodiac:</strong> Menentukan *bidang* yang diminati (misal: Air suka komunikasi).</p>
             </div>
+            <div class="matrix-item">
+                <h5>Pikiran (Mindset)</h5>
+                <p><strong>HD:</strong> Defined Head (Inspirasi tetap) vs Open Head (Mencari inspirasi).<br>
+                <strong>Weton:</strong> Pasaran (Wage cenderung analitis, Pahing cenderung kreatif).<br>
+                <strong>Zodiac:</strong> Mercury Sign (Gaya komunikasi dan logika).</p>
+            </div>
+            <div class="matrix-item">
+                <h5>Emosional (E-Motion)</h5>
+                <p><strong>HD:</strong> Solar Plexus (Gelombang emosi kimiawi tubuh).<br>
+                <strong>Weton:</strong> Neptu (Kapasitas menahan beban emosi).<br>
+                <strong>Zodiac:</strong> Moon Sign (Kebutuhan emosional dasar).</p>
+            </div>
+            <div class="matrix-item highlight-matrix">
+                <h5>Gelombang Otak (Brain Waves)</h5>
+                <p><strong>NLS Insight:</strong><br>
+                • <strong>Beta (Sadar/Kerja):</strong> Dominan pada Generator saat bekerja (Sakti).<br>
+                • <strong>Alpha (Flow/Santai):</strong> Kondisi alami Projector/Reflector untuk menyerap info.<br>
+                • <strong>Theta (Deep/Meditatif):</strong> Akses Weton Kliwon (Pusat Spiritual).<br>
+                • <strong>Delta (Tidur/Healing):</strong> Fase istirahat total untuk me-reset sistem Manifestor.</p>
+            </div>
+            <div class="matrix-item">
+                <h5>Energi Batin (Inner Power)</h5>
+                <p><strong>HD:</strong> Pusat Sakral (Baterai kehidupan) & Pusat Jantung (Willpower).<br>
+                <strong>Weton:</strong> Sedulur Papat (Energi pendamping kelahiran).<br>
+                <strong>Zodiac:</strong> Rising Sign (Energi yang dipancarkan ke luar).</p>
+            </div>
+            <div class="matrix-item">
+                <h5>Percintaan (Relation)</h5>
+                <p><strong>HD:</strong> Koneksi Aura (Magnetism & Electromagnetism).<br>
+                <strong>Weton:</strong> Hitungan Jodoh (Kecocokan neptu untuk keharmonisan rumah tangga).<br>
+                <strong>Zodiac:</strong> Venus Sign (Bahasa cinta dan nilai estetika).</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="comparison-section reveal">
+        <div class="matrix-header" style="padding-bottom: 60px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <h3 class="serif-title">Structural Alignment vs. Casual Reading</h3>
+            <p class="body-text-sm" style="margin-top: 15px; max-width: 600px; color: var(--gold); letter-spacing: 1px; font-style: italic;">
+                "Hidup Anda tidak rusak. Anda hanya salah sistem."
+            </p>
+        </div>
+
+        <div class="comparison-container">
+            <div class="comp-box basic">
+                <h5>Lainnya (Influencer/Healer)</h5>
+                <ul>
+                    <li>Fokus pada emosi & drama masa kecil</li>
+                    <li>Sekadar membacakan chart (Reader)</li>
+                    <li>Pendekatan spiritual yang mengawang</li>
+                    <li>"Semoga Anda sembuh"</li>
+                </ul>
+            </div>
+            
+            <div class="comp-vs">VS</div>
+
+            <div class="comp-box premium">
+                <div class="card-glow-effect"></div>
+                <h5>NLS Energy Architect</h5>
+                <ul>
+                    <li>Fokus pada struktur & rasionalitas dewasa</li>
+                    <li>Menyusun ulang sistem hidup (Architect)</li>
+                    <li>Pendekatan strategis & struktural</li>
+                    <li>"Sekarang Anda tahu strukturnya. Jalankan."</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<section class="journey-section reveal">
+    <div class="matrix-header" style="text-align: center; margin-bottom: 80px;">
+        <h3 class="serif-title">The 7 Stages of Flow</h3>
+    </div>
+
+    <div class="flow-container">
+        <div class="flow-line"></div> <div class="journey-steps">
+            <div class="step-node" data-step="1">
+                <div class="node-circle">01</div>
+                <p>Awareness</p>
+            </div>
+            <div class="step-node" data-step="2">
+                <div class="node-circle">02</div>
+                <p>Capture</p>
+            </div>
+            <div class="step-node" data-step="3">
+                <div class="node-circle">03</div>
+                <p>Offer</p>
+            </div>
+            <div class="step-node" data-step="4">
+                <div class="node-circle">04</div>
+                <p>Payment</p>
+            </div>
+            <div class="step-node" data-step="5">
+                <div class="node-circle">05</div>
+                <p>Prepare</p>
+            </div>
+            <div class="step-node" data-step="6">
+                <div class="node-circle">06</div>
+                <p>Delivery</p>
+            </div>
+            <div class="step-node" data-step="7">
+                <div class="node-circle">07</div>
+                <p>Aftercare</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="journey-modal" class="mystic-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-card">
+        <div class="card-border-ornament"></div>
+        <div class="modal-close">✕</div>
+        <div class="modal-content">
+            <span id="modal-num" class="pillar-num"></span>
+            <h4 id="modal-title"></h4>
+            <div class="gold-divider-line small"><span class="diamond"></span></div>
+            <p id="modal-desc" class="card-detail"></p>
+        </div>
+    </div>
+</div>
+    <section class="legacy-section reveal">
+        <div class="legacy-content">
+            <div class="banyan-icon">🌳</div>
+            <h3 class="serif-title">The Great Banyan Legacy</h3>
+            <p class="body-text">
+                Kami membangun warisan yang tidak hanya bertahan dalam satu musim, tapi diperkaya olehnya. 
+                NLS membantu Anda menarik garis lurus dari aksi hari ini menuju dampak 100 tahun ke depan.
+            </p>
+            <div class="gold-divider-line" style="margin: 40px auto;"><span class="diamond"></span></div>
+            <p class="tagline" style="color: var(--gold); font-weight: 400;">Design Your Energy. Build Your Legacy.</p>
+        </div>
+    </section>
+
+
+    <section class="cta-origin reveal">
+        <div class="cta-wrapper">
+            <p class="cta-sub">Stop being a passenger in a chaotic world.</p>
+            
+            <div class="portal-button-container">
+                <div class="glow-aura"></div> <a href="form.html" class="cta-link-portal">
+                    <span class="btn-text">Mulai Cari Jati Diri</span>
+                    <span class="btn-shimmer"></span>
+                </a>
+            </div>
+            
+            <p class="cta-tagline">Design Your Energy. Build Your Legacy.</p>
+        </div>
+    </section>
+
+        <section class="cta-origin reveal">
+        <p class="cta-sub">Stop being a passenger in a chaotic world.</p>
+        <a href="method.html" class="cta-link">Pelajari 10 Metode NLS</a>
+    </section>
+    <footer class="footer-clean">
+        <div class="footer-content">
+            <span>© 2026 NLS™ - Nusantara Law System</span>
+            <div class="footer-links"><a href="#">Privacy</a><a href="#">Contact</a></div>
         </div>
     </footer>
 
-    <div class="audio-widget" id="audioWidget">
-        <div class="audio-visualizer">
-            <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-            <div class="bar"></div><div class="bar"></div>
-        </div>
-        
-        <div class="audio-info">
-            <span class="audio-title">Theta Frequency</span>
-            <span class="audio-status">4Hz - Deep Focus</span>
-        </div>
-
-        <button id="playBtn" class="play-btn">
-            <i class="fas fa-play"></i>
-        </button>
-
-        <audio id="bgMusic" loop>
-            <source src="assets/Astral-Deep-Theta-4Hz.mp3" type="audio/mp3">
-        </audio>
+    <div class="audio-unit" id="audioWidget">
+        <button id="playBtn"><div class="pulse"></div></button>
+        <audio id="bgMusic" loop src="assets/Astral-Deep-Theta-4Hz.mp3"></audio>
     </div>
-
-    <script src="global-audio.js"></script>
+    <div class="cursor-dot"></div><div class="cursor-outline"></div>
+    
     <script src="script.js"></script>
 </body>
 </html>
